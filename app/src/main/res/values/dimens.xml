@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="otp_edit_text">20sp</dimen>
+    <dimen name="normal_margin">5dp</dimen>
+    <dimen name="bigger_margin">15dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="custom_progress_height">8dp</dimen>
+</resources>

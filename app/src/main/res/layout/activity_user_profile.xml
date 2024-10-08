@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@drawable/group99">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.00" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.065" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.099" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/flatLineBlueDark"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+
+        <LinearLayout
+            android:id="@+id/LinBackNav"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="@+id/guideline1">
+            <include layout="@layout/header"/>
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView7"
+            style="@style/white_heading_text_style"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/label_profile"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnUpdateProfile"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group169"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_update_profile"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnAddFriend"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group175"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_add_friend"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnUpdateProfile" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnFriendViewAcceptReject"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group170"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_friend_accept_reject"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnAddFriend" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnFriendList"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group172"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_friend_list"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnFriendViewAcceptReject" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnChangePin"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group171"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_change_pin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnFriendList" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnUpdateProfile"
+            app:layout_constraintEnd_toEndOf="@+id/BtnUpdateProfile"
+            app:layout_constraintTop_toTopOf="@+id/BtnUpdateProfile"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnAddFriend"
+            app:layout_constraintEnd_toEndOf="@+id/BtnAddFriend"
+            app:layout_constraintTop_toTopOf="@+id/BtnAddFriend"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnFriendList"
+            app:layout_constraintEnd_toEndOf="@+id/BtnFriendList"
+            app:layout_constraintTop_toTopOf="@+id/BtnFriendList"
+            android:background="@drawable/down_arrow"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnChangePin"
+            app:layout_constraintEnd_toEndOf="@+id/BtnChangePin"
+            app:layout_constraintTop_toTopOf="@+id/BtnChangePin"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnFriendViewAcceptReject"
+            app:layout_constraintEnd_toEndOf="@+id/BtnFriendViewAcceptReject"
+            app:layout_constraintTop_toTopOf="@+id/BtnFriendViewAcceptReject"
+            android:background="@drawable/down_arrow" />
+
+
+        <!--
+            <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnUpdateProfile"
+            style="@style/black_heading_text_style"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:gravity="start|center"
+            android:text="@string/menu_update_profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group172"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnUpdateMobileNo"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group170"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_update_mobil_no"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnUpdateProfile" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnFeedback"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group173"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_Feedback"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnChangePin" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnAddFriend"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group175"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_add_friend"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnFeedback" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnFriendList"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group169"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_friend_list"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnAddFriend" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnChangePin"
+            style="@style/black_heading_text_style"
+            android:gravity="start|center"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#EFEFEF"
+            android:elevation="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:icon="@drawable/group171"
+            app:iconGravity="start"
+            app:iconSize="48dp"
+            app:iconTintMode="multiply"
+            app:rippleColor="@color/flatBlueDark"
+            app:shapeAppearance="@style/ShapeAppearance.MaterialComponents.MediumComponent"
+            android:text="@string/menu_change_pin"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/BtnUpdateMobileNo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnUpdateProfile"
+            app:layout_constraintEnd_toEndOf="@+id/BtnUpdateProfile"
+            app:layout_constraintTop_toTopOf="@+id/BtnUpdateProfile"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnUpdateProfile"
+            app:layout_constraintEnd_toEndOf="@+id/BtnUpdateProfile"
+            app:layout_constraintTop_toTopOf="@+id/BtnUpdateProfile"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnUpdateMobileNo"
+            app:layout_constraintEnd_toEndOf="@+id/BtnUpdateMobileNo"
+            app:layout_constraintTop_toTopOf="@+id/BtnUpdateMobileNo"
+            android:background="@drawable/down_arrow" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnChangePin"
+            app:layout_constraintEnd_toEndOf="@+id/BtnChangePin"
+            app:layout_constraintTop_toTopOf="@+id/BtnChangePin"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnFeedback"
+            app:layout_constraintEnd_toEndOf="@+id/BtnFeedback"
+            app:layout_constraintTop_toTopOf="@+id/BtnFeedback"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnAddFriend"
+            app:layout_constraintEnd_toEndOf="@+id/BtnAddFriend"
+            app:layout_constraintTop_toTopOf="@+id/BtnAddFriend"
+            android:background="@drawable/down_arrow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnFriendList"
+            app:layout_constraintEnd_toEndOf="@+id/BtnFriendList"
+            app:layout_constraintTop_toTopOf="@+id/BtnFriendList"
+            android:background="@drawable/down_arrow" />
+        -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

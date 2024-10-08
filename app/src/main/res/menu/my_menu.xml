@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/help_settings"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/registration_settings"
+                android:title="@string/registration_settings" />
+            <item android:id="@+id/profile_settings"
+                android:title="@string/profile_settings" />
+            <item android:id="@+id/my_progress_settings"
+                android:title="@string/my_progress_settings" />
+            <item android:id="@+id/single_practice_settings"
+                android:title="@string/single_practice_settings" />
+            <item android:id="@+id/multi_practice_settings"
+                android:title="@string/multi_practice_settings" />
+            <item android:id="@+id/delete_account"
+                android:title="@string/delete_account" />
+        </menu>
+    </item>
+</menu>
